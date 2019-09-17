@@ -25,15 +25,3 @@ steps:
     registry: 633025986259.dkr.ecr.us-east-1.amazonaws.com
   when:
     event: push
-# Deploying to eks cluster
-- name: deploy
-  image: drone-eks-plugin:latest
-  iam_role_arn: arn:aws:iam::633025986259:role/eks-role
-  eks_cluster: eks-cluster
-  namespace: default
-  deployment: wisereads-ui
-  repo: 633025986259.dkr.ecr.us-east-1.amazonaws.com/wisereads-ui
-  container: wisereads-ui
-  tag: latest
-  when:
-    branch: master
