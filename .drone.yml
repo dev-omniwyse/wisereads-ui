@@ -11,7 +11,7 @@ steps:
     - npm install
     - ng build
     - ls
-# to push docker image into ecrrepo
+# to push docker image into ecr-repo
 - name: publish
   image: plugins/ecr
   settings:
