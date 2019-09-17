@@ -20,12 +20,12 @@ steps:
     secret_key:
       from_secret: aws_secret_access_key
     region: us-east-1
-    tags: [ latest, 1.0, 1 ]
+    tags: [ latest, 2.0, 2 ]
     repo: 633025986259.dkr.ecr.us-east-1.amazonaws.com/wisereads-ui
     registry: 633025986259.dkr.ecr.us-east-1.amazonaws.com
   when:
     event: push
-# Deploy to eks cluster
+# Deploying to eks cluster
 - name: deploy
   image: drone-eks-plugin:latest
   iam_role_arn: arn:aws:iam::633025986259:role/eks-role
