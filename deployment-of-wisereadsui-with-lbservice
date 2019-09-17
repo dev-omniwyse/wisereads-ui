@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: eks-wisereadsui
-          image: '603308524888.dkr.ecr.ap-south-1.amazonaws.com/wisereadseksuisuccess:latest'
+          image: '633025986259.dkr.ecr.us-east-1.amazonaws.com/wisereads-ui:latest'
           ports:
             - containerPort: 80
           resources:
